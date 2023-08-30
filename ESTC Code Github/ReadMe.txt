@@ -1,5 +1,4 @@
-Firstly run Run.R to get the estimated treatment effects saved in Output folder and then
-run Results.R to evaluate the estimated treatment effects.
+Firstly run Run.R to get the estimated treatment effects and then run Results.R to evaluate the estimated treatment effects.
 
 1. All_functions: the functions needed in estimation
 2. model_input_S1_BB.csv: model input for the simulations
