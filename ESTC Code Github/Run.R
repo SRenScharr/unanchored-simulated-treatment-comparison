@@ -19,7 +19,7 @@ ipt2 <- Task_ID-(ipt1-1)*12 #Study/Column number
 #######################################################################################
 #2. model input
 n_bt <- 10^3#number of bootstrap
-model_input_raw<- read.csv(paste("model_input_S",ipt1,"_BB.csv",sep=''))
+model_input_raw<- read.csv(paste("Model_input_S",ipt1,"_BB.csv",sep=''))
 row.names(model_input_raw) <-model_input_raw[,1]
 model_input<-model_input_raw[,ipt2+1, drop=FALSE]
 
