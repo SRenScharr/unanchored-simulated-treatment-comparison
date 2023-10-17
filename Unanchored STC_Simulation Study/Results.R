@@ -4,7 +4,7 @@ library(lmtest)
 library(copula)
 library(randtoolbox)
 library(boot)
-setwd("X:/HAR_WG/WG/Single-arm_Trial/ESTC/R code/ESTC Code Github")
+setwd("X:/HAR_WG/WG/Single-arm_Trial/ESTC/R code/Github/unanchored-simulated-treament-comparison/Unanchored STC_Simulation Study")
 
 source("All_functions.R")
 source("Output_functions.R")

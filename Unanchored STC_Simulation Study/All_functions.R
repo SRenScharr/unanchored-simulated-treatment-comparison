@@ -386,5 +386,5 @@ my_sim_fun <-
   	var_A <- N/(sum(A_AgD$y)*(N-sum(A_AgD$y)))
 
     c(mean(boot.t11)-t12, sqrt(var(boot.t11)+var_A))
-    
+	
   }

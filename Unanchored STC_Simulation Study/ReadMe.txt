@@ -1,4 +1,10 @@
-Firstly run Run.R to get the estimated treatment effects and then run Results.R to evaluate the estimated treatment effects.
+The simulation procedures are demonstrated in Example analysis.R by taking one Monte-Carlo repitition of scenario 1 as an example. 
+The data used in the analysis are saved in A_AgDSummary.csv and B_IPD.csv.
+
+
+
+
+The comprehensive simulation study with 120 scenarios can be done by firstly run Run.R to get the estimated treatment effects and then run Results.R to evaluate the estimated treatment effects.
 
 1. All_functions: the functions needed in estimation
 2. Model_input_S1_BB.csv: model input for the simulations
