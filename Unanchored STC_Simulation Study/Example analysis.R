@@ -1,7 +1,7 @@
 ##The example analysis code has four steps##
 ##1. MODEL INPUT##
 ##2. Generate simulated datasets##
-##3. Bootstrap##the main step
+##3. Unanchored STC with bootstrap##
 ##4. Results, mean and SE of the treatment effect##
 source("All_functions.R")
 
@@ -76,7 +76,7 @@ B_IPD <- AB_IPD_all %>%
 write.csv(B_IPD,"B_IPD.csv",row.names = FALSE) #data used for analysis related to IPD population
 
 
-##3. bootstrap##
+##3. Unanchored STC with bootstrap##
 boot_fun <- function(i) {
   
   index <- sample(nrow(B_IPD), N, replace = TRUE)
@@ -123,8 +123,6 @@ boot_fun <- function(i) {
   p_STC1 <- predict(m_STC1,
                     newdata = data.frame(AgD_cov),
                     type = "response")
-  
-  
   
   p_B <- mean(p_STC1)
   
